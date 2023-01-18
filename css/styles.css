@@ -210,3 +210,47 @@ a {
 .input-group .btn {
     margin: 4px;
 }
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #ececec;
+    overflow: hidden;
+}
+
+.card__header, .card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: var(--color-bright);
+}
+
+.card--secondary .card__header {
+    background: var(--color-secondary);
+    color: var(--color-bright);
+}
+
+.card--accent .card__header {
+    background: var(--color-accent);
+    color: var(--color-headings);
+}
+
+.card__title {
+    color: var(--color-bright);
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.card .list__item {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card__title {
+        font-size: 2rem;
+    }
+}
