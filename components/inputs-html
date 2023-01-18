@@ -1,0 +1,8 @@
+<div class="input-group">
+  <input
+    type="email"
+    class="input"
+    placeholder="Enter your Email Address Here..."
+  />
+  <button class="btn btn--primary">Submit</button>
+</div>
