@@ -199,6 +199,7 @@ a {
     border: 1px solid #ccc;
     border-radius: 30px;
     display: flex;
+    background: #fff;
 }
 
 .input-group .input {
@@ -281,4 +282,24 @@ a {
     .grid--1x3 {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Callouts */
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--secondary {
+    background: var(--color-secondary);
+}
+
+.callout__heading {
+    color: var(--color-headings);
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout__content {
+    text-align: center;
 }
