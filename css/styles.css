@@ -358,6 +358,12 @@ a {
     color: var(--color-bright);
 }
 
+.block--pastel {
+    background: rgb(231,247,243);
+    background: radial-gradient(circle, rgba(231,247,243,1) 49%, rgba(160,244,231,0.5803571428571428) 83%, rgba(249,103,101,0.30) 100%);
+}
+
+
 .block__header {
     text-align: center;
 }
@@ -424,5 +430,28 @@ a {
 
     .nav__item {
         border: 0;
+    }
+}
+
+/* Hero */
+.hero__tagline {
+    font-size: 2rem;
+    color:#494d4f;
+    letter-spacing: 0.5px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero__content {
+        text-align: left;
+        align-self: center;
     }
 }
