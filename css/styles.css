@@ -455,3 +455,13 @@ a {
         align-self: center;
     }
 }
+
+/* Card Blocks */
+.block-cards .grid {
+    gap: 4rem;
+}
+
+.block-cards .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
