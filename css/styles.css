@@ -15,6 +15,7 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /* Typography */
 ::selection {
     color: var(--color-bright);
@@ -35,11 +36,11 @@ h1, h2, h3 {
     color: var(--color-headings);
     font-weight: 800;
     margin-bottom: 2rem;
+    line-height: 1.3;
 }
 
 h1 {
     font-size: 4.5rem;
-    font-weight: 800;
 }
 
 h2 {
@@ -371,7 +372,7 @@ display:inline-block;
 /* Callouts */
 .callout {
     padding: 4rem;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .callout--secondary {
@@ -451,7 +452,6 @@ display:inline-block;
 /* Nav */
 .nav {
     padding: 0 1rem;
-    background: var(--color-bright);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -510,6 +510,10 @@ display:inline-block;
 
     .nav__item {
         border: 0;
+    }
+
+    .logo {
+        margin: 0.5rem 3rem;
     }
 }
 
@@ -575,7 +579,11 @@ display:inline-block;
     width: 100%;
 }
 
-.block-showcase .list, h3 {
+.block-showcase .list {
+    color: var(--color-bright);
+}
+
+.block-showcase h3 {
     color: var(--color-bright);
 }
 
@@ -638,6 +646,10 @@ display:inline-block;
     color: #fff;
     opacity: 0.3;
     margin-top: 2rem;
+}
+
+.footer .collapsible__chevron {
+    fill: var(--color-bright);
 }
 
 @media screen and (min-width:768px) {
