@@ -16,6 +16,11 @@
     margin: 0 auto;
 }
 /* Typography */
+::selection {
+    color: var(--color-bright);
+    background: var(--color-primary);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -153,7 +158,7 @@ width:64px;height:64px;
 display:inline-block;
 }
 
-.media
+.medias
 {
 background:url('../images/css-sprite-combined.png') -192px -0px;
 width:64px;height:64px;
@@ -337,6 +342,7 @@ display:inline-block;
 /* Media Objects */
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -561,5 +567,33 @@ display:inline-block;
 @media screen and (min-width:768px) {
     .feature:nth-of-type(even) .feature__content {
         order: 2;
+    }
+}
+
+/* Showcase block */
+.block-showcase__image > img {
+    width: 100%;
+}
+
+.block-showcase .list, h3 {
+    color: var(--color-bright);
+}
+
+.block-showcase .media {
+    margin-left: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__image {
+        justify-self: end;
+    }
+
+    .block-showcase__image > img {
+        max-width: 700px;
+        width: auto;
     }
 }
